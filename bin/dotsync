@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+var program = require('commander'),
+  info = require('../package.json');
+
+program
+  .version(info.version)
+  .description(info.description)
+  .parse(process.argv);

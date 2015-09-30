@@ -1,0 +1,33 @@
+{
+  "name": "node-dotsync",
+  "version": "0.0.1",
+  "description": "keep your dotfiles synced across computers",
+  "main": "lib/index.js",
+  "bin": {
+    "dotsync": "./bin/dotsync"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jalopez/node-dotsync"
+  },
+  "keywords": [
+    "dotfiles",
+    "github",
+    "dropbox",
+    "sync"
+  ],
+  "author": "Javier López <lopez.pardo@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jalopez/node-dotsync/issues"
+  },
+  "homepage": "https://github.com/jalopez/node-dotsync",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "convict": "^1.0.1",
+    "prompt": "^0.2.14"
+  }
+}
