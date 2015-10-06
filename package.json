@@ -26,8 +26,9 @@
   },
   "homepage": "https://github.com/jalopez/node-dotsync",
   "dependencies": {
+    "bluebird": "^2.10.1",
     "commander": "^2.8.1",
-    "convict": "^1.0.1",
-    "prompt": "^0.2.14"
+    "osenv": "^0.1.3",
+    "walkdir": "0.0.10"
   }
 }

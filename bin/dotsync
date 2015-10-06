@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 'use strict';
 var program = require('commander'),
-  info = require('../package.json');
+  info = require('../package.json'),
+  dotsync = require('../lib/index.js');
 
 program
   .version(info.version)
   .description(info.description)
   .parse(process.argv);
+
+// TODO: Process arguments and options
+dotsync().then(function() {
+  process.exit(0);
+});
+
