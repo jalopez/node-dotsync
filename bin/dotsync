@@ -7,10 +7,11 @@ var program = require('commander'),
 program
   .version(info.version)
   .description(info.description)
+  .option('-v, --verbose', 'Verbose mode')
   .parse(process.argv);
 
 // TODO: Process arguments and options
-dotsync().then(function() {
+dotsync(program).then(function() {
   process.exit(0);
 });
 
