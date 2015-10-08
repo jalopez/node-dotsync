@@ -8,6 +8,7 @@ program
   .version(info.version)
   .description(info.description)
   .option('-v, --verbose', 'Verbose mode')
+  .option('-d, --dry-run', 'Dry run')
   .parse(process.argv);
 
 // TODO: Process arguments and options
