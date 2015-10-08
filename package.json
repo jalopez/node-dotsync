@@ -1,5 +1,5 @@
 {
-  "name": "node-dotsync",
+  "name": "dotsync",
   "version": "0.0.1",
   "description": "Keep your dotfiles synced across computers",
   "main": "lib/index.js",
