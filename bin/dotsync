@@ -9,10 +9,14 @@ program
   .description(info.description)
   .option('-v, --verbose', 'Verbose mode')
   .option('-d, --dry-run', 'Dry run')
+  .option('-f, --force', 'Force link (will delete contents)')
   .parse(process.argv);
 
-// TODO: Process arguments and options
-dotsync(program).then(function() {
-  process.exit(0);
-});
+dotsync(program).
+  then(function() {
+    process.exit(0);
+  }).
+  catch(function() {
+    process.exit(1);
+  });
 
