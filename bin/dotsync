@@ -10,6 +10,8 @@ program
   .option('-v, --verbose', 'Verbose mode')
   .option('-d, --dry-run', 'Dry run')
   .option('-f, --force', 'Force link (will delete contents)')
+  .option('--dotfiles [path]', 'Path in which dotfiles are stored [~/Dropbox/dotfiles]')
+  .option('--home [path]', 'Path of your home to link your dotfiles [~]')
   .parse(process.argv);
 
 dotsync(program).
