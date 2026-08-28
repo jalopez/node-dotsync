@@ -1,3 +1,5 @@
+# THIS PROJECT IS NO LONGER MAINTAINED. USE MORE MODERN/POWERFUL ALTERNATIVES LIKE https://www.chezmoi.io/
+
 # dotsync
 Small tool to keep your dotfiles synced across computers.
 
